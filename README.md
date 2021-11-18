@@ -55,8 +55,8 @@ node call-add-num-ext-lib.js [private_key] [testnet] [contract_address_from_(2)]
 Observe that the transition seem to be stuck.
 
 ## Sample Contracts
-Ext lib address: 0x89d857ec8cfefe18f09d5481197c288c2c40ddcc
+Ext lib address: [0x89d857ec8cfefe18f09d5481197c288c2c40ddcc](https://viewblock.io/zilliqa/address/zil138v90myvlmlp3uya2jq3jlpg3skyphwvv9lh6f?network=testnet)
 
-Contract (import ext lib and used it): 0xbf7a268626a27d5a19058d6456daa9abfb15cf93
+Contract (import ext lib and used it): [0xbf7a268626a27d5a19058d6456daa9abfb15cf93](https://viewblock.io/zilliqa/address/0xbf7a268626a27d5a19058d6456daa9abfb15cf93=testnet)
 
-Contract2 (import ext lib but don't used it): 0x7a3b96d79b628ede9cac04d186983b992a385801
+Contract2 (import ext lib but don't used it): [0x7a3b96d79b628ede9cac04d186983b992a385801](https://viewblock.io/zilliqa/address/0x7a3b96d79b628ede9cac04d186983b992a385801=testnet)
