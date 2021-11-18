@@ -1,0 +1,23 @@
+scilla_version 0
+
+import AdditionLib IntUtils
+
+let adder =
+    fun (a: Uint128) =>
+    fun (b: Uint128) =>
+    AdditionLib.add_if_equal a b
+
+library MyContract
+
+contract MyContract()
+
+transition addNumWithExtLib(a: Uint128, b: Uint128)
+  result = adder a b;
+  e = {_eventname : "addNumWithExtLib"; a : a; b : b; result : result};
+  event e
+end
+
+transition addNum(a: Uint128, b: Uint128)
+  e = {_eventname : "addNum"; a : a; b : b};
+  event e
+end

@@ -1,0 +1,16 @@
+{
+  "name": "zilliqajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zilliqa-js/zilliqa": "^3.3.3",
+    "bn.js": "^5.2.0",
+    "tslib": "^2.3.1"
+  }
+}

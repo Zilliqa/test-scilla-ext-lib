@@ -1,0 +1,11 @@
+import IntUtils
+
+library AdditionLib
+
+let add_if_equal =
+  fun (a: Uint128) =>
+  fun (b: Uint128) =>
+  let eq = uint128_eq a b in
+  match eq with
+  | True => builtin add a b
+  | False => Uint128 0

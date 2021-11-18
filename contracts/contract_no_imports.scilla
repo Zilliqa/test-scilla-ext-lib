@@ -1,0 +1,10 @@
+scilla_version 0
+
+library MyContract
+
+contract MyContract()
+
+transition addNum(a: Uint128, b: Uint128)
+  e = {_eventname : "addNum"; a : a; b : b};
+  event e
+end
