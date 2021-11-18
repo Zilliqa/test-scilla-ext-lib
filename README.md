@@ -4,12 +4,12 @@ This repository is for testing the user-defined libraries for Scilla. See https:
 
 ## How to Use
 
-0. Install ZilliqaJS.
+1. Install ZilliqaJS.
 ```
 yarn
 ```
 
-1. Deploy the sample external library: `AdditionLib`
+2. Deploy the sample external library: `AdditionLib`
 
 ```
 node deploy-ext-lib.js [private_key] [testnet]
@@ -17,7 +17,7 @@ node deploy-ext-lib.js [private_key] [testnet]
 
 Note down the AdditionLib contract address.
 
-2. Deploy the sample contract that imports `AdditionLib`
+3. Deploy the sample contract that imports `AdditionLib`
 
 ```
 node deploy-contract.js [private_key] [testnet] [ext_lib_addr]
@@ -25,10 +25,10 @@ node deploy-contract.js [private_key] [testnet] [ext_lib_addr]
 
 Note down this contract.
 
-3. Execute the `addNumWithExtLib` transition
+4. Execute the `addNumWithExtLib` transition
 
 ```
-node call-add-num-ext-lib.js [private_key] [testnet] [contract_address_from_(2)] [num_a] [num_b]
+node call-add-num-ext-lib.js [private_key] [testnet] [contract_address_from_(3)] [num_a] [num_b]
 ```
 
 ## Possible Bug?
