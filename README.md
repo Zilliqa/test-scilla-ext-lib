@@ -31,32 +31,9 @@ Note down this contract.
 node call-add-num-ext-lib.js [private_key] [testnet] [contract_address_from_(3)] [num_a] [num_b]
 ```
 
-## Possible Bug?
-Transitions cannot be executed when we import an external library. I suspect it is due to the declaration `_library` = `True` when we deploy a contract that imports an external library. The declaration is requried but at the same time it seems to treat the entire contract as a library and as a result, tranisitons cannot be executed?
-
-### Reproduce
-
-1. Change directory to `bug` folder.
-
-2. Deploy this contract2 which imports an ext library but doesn't use it.
-
-```
-node deploy-contract2.js [private_key] [testnet] [ext_lib_addr]
-```
-
-Note this contract address.
-
-3. Execute the `addNum` transition
-
-```
-node call-add-num-ext-lib.js [private_key] [testnet] [contract_address_from_(2)] [num_a] [num_b]
-```
-
-Observe that the transition seem to be stuck.
-
 ## Sample Contracts
 Ext lib address: [0xcb73b4952aebc1e2b4c1ed599147475a74c687ce](https://viewblock.io/zilliqa/address/0xcb73b4952aebc1e2b4c1ed599147475a74c687ce?network=testnet)
 
-Contract (import ext lib and used it): [0xf9b28ac19636656646b2938895665850649219e8](https://viewblock.io/zilliqa/address/0xf9b28ac19636656646b2938895665850649219e8=testnet)
+Contract (import ext lib and used it): [0x4e764160bba7f0ee581464119b8d6fa529651098](https://viewblock.io/zilliqa/address/0x4e764160bba7f0ee581464119b8d6fa529651098=testnet)
 
-Contract2 (import ext lib but don't used it): [0x7a3b96d79b628ede9cac04d186983b992a385801](https://viewblock.io/zilliqa/address/0x7a3b96d79b628ede9cac04d186983b992a385801=testnet)
+`addNumWithExtLib`: https://viewblock.io/zilliqa/tx/0xdb462c6153d96b5242bd876c120afac8f5a058ea65791dad77470b3a304bad9e?network=testnet

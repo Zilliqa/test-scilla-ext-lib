@@ -7,7 +7,7 @@ library MyContract
 let adder =
     fun (a: Uint128) =>
     fun (b: Uint128) =>
-    AdditionLib.add_if_equal a b
+    add_if_equal a b
 
 contract MyContract()
 

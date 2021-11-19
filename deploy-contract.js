@@ -47,15 +47,6 @@ async function main() {
                 value: '0',
             },
             {
-                vname: '_library',
-                type: 'Bool',
-                value: {
-                    "constructor": "True",
-                    "argtypes": [],
-                    "arguments": [],
-                },
-            },
-            {
                 vname: '_extlibs',
                 type: 'List (Pair String ByStr20)',
                 value: [
