@@ -1,3 +1,5 @@
+scilla_version 0
+
 import IntUtils
 
 library AdditionLib
@@ -9,3 +11,4 @@ let add_if_equal =
   match eq with
   | True => builtin add a b
   | False => Uint128 0
+  end

@@ -11,7 +11,7 @@ async function main() {
 
     if (myArgs.length < 5) {
         console.error("Wrong arguments\n");
-        console.log("node call-add-num-ext-lib.js [private_key] [testnet / mainnet] [add_num_contract_address] [number_a] [number_b]");
+        console.log("node call-add-num.js [private_key] [testnet / mainnet] [add_num_contract_address] [number_a] [number_b]");
         return;
     }
 

@@ -2,12 +2,12 @@ scilla_version 0
 
 import AdditionLib
 
+library MyContract
+
 let adder =
     fun (a: Uint128) =>
     fun (b: Uint128) =>
     AdditionLib.add_if_equal a b
-
-library MyContract
 
 contract MyContract()
 
