@@ -11,17 +11,12 @@ async function main() {
 
     if (myArgs.length < 2) {
         console.error("Wrong arguments");
-        console.log("node deploy-ext-lib.js [private_key] [testnet / mainnet]");
+        console.log("node deploy-ext-lib.js [private_key] [l2api_url]");
         return;
     }
 
-    let api = 'https://dev-api.zilliqa.com';
     const privateKey = myArgs[0];
-    const network = myArgs[1];
-
-    if (network === 'mainnet') {
-        api = 'https://api.zilliqa.com';
-    }
+    const api = myArgs[1]
 
     console.log("network: ", api);
 
