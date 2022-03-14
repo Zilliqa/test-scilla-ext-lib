@@ -12,7 +12,7 @@ yarn
 2. Deploy the sample external library: `AdditionLib`
 
 ```
-node deploy-ext-lib.js [private_key] [testnet]
+node deploy-addition-lib.js [private_key] [testnet]
 ```
 
 Note down the AdditionLib contract address.
